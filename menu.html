@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Harah Rubina Del Dios Farm</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Farm Logo" class="logo">
+                Harah Rubina Del Dios Farm
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link facebook-btn" href="https://www.facebook.com/profile.php?id=61555217610211" target="_blank">
+                            <i class="bi bi-facebook"></i> Facebook Page
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <p class="lead">Discover our delicious selection of food and beverages</p>
+        </div>
+    </section>
+
+
+
+    <!-- Menu Introduction -->
+    <section class="menu-intro">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2>Our Culinary Journey</h2>
+                    <p>At Harah Rubina Del Dios Farm, we take pride in serving authentic Filipino cuisine made with fresh, locally-sourced ingredients. Our menu reflects the rich culinary heritage of Bukidnon while offering modern twists on classic favorites.</p>
+                    <div class="menu-features">
+                        <div class="feature-item">
+                            <i class="bi bi-check-circle"></i>
+                            <span>Fresh Local Ingredients</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-check-circle"></i>
+                            <span>Homestyle Cooking</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-check-circle"></i>
+                            <span>Family Recipes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/images/logo.png" alt="Our Kitchen" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Menu Categories -->
+        <section class="menu-categories">
+            <div class="container">
+                <div class="category-buttons">
+                    <button class="category-btn active" data-category="all">All Items</button>
+                    <button class="category-btn" data-category="main">Main Dishes</button>
+                    <button class="category-btn" data-category="drinks">Drinks</button>
+                    <button class="category-btn" data-category="desserts">Desserts</button>
+                    <button class="category-btn" data-category="snacks">Snacks</button>
+                    <button class="category-btn" data-category="specials">Special Offers</button>
+                </div>
+            </div>
+        </section>
+
+    <!-- Menu Items -->
+    <section class="menu-items">
+        <div class="container">
+            <div class="menu-grid">
+                <!-- Main Dishes -->
+                <div class="menu-card" data-category="main">
+                    <img src="assets/images/menu/adobo.png" alt="Pork Adobo">
+                    <div class="menu-content">
+                        <h3>Pork Adobo</h3>
+                        <p>Classic Filipino dish of tender pork in soy sauce and vinegar</p>
+                        <div class="menu-price-rating">
+                            <span class="menu-price">₱120</span>
+                            <div class="rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                        </div>
+                        <button class="view-details-btn" data-bs-toggle="modal" data-bs-target="#menuModal1">View Details</button>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="main">
+                    <img src="assets/images/menu/sinigang.jpg" alt="Sinigang">
+                    <div class="menu-content">
+                        <h3>Sinigang</h3>
+                        <p>Traditional sour soup with pork and fresh vegetables</p>
+                        <div class="menu-price-rating">
+                            <span class="menu-price">₱150</span>
+                            <div class="rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <button class="view-details-btn" data-bs-toggle="modal" data-bs-target="#menuModal2">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Drinks -->
+                <div class="menu-card" data-category="drinks">
+                    <img src="assets/images/menu/coffee.jpg" alt="Brewed Coffee">
+                    <div class="menu-content">
+                        <h3>Brewed Coffee</h3>
+                        <p>Freshly brewed local coffee</p>
+                        <div class="menu-price-rating">
+                            <span class="menu-price">₱50</span>
+                            <div class="rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                        </div>
+                        <button class="view-details-btn" data-bs-toggle="modal" data-bs-target="#menuModal3">View Details</button>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="drinks">
+                    <img src="assets/images/menu/calamansi.jpg" alt="Calamansi Juice">
+                    <div class="menu-content">
+                        <h3>Calamansi Juice</h3>
+                        <p>Fresh squeezed local calamansi with honey</p>
+                        <div class="menu-price-rating">
+                            <span class="menu-price">₱60</span>
+                            <div class="rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <button class="view-details-btn" data-bs-toggle="modal" data-bs-target="#menuModal4">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-card" data-category="desserts">
+                    <img src="assets/images/menu/leche-flan.jpg" alt="Leche Flan">
+                    <div class="menu-content">
+                        <h3>Leche Flan</h3>
+                        <p>Creamy caramel custard dessert</p>
+                        <div class="menu-price-rating">
+                            <span class="menu-price">₱60</span>
+                            <div class="rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <button class="view-details-btn" data-bs-toggle="modal" data-bs-target="#menuModal5">View Details</button>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="desserts">
+                    <img src="assets/images/menu/halo-halo.jpg" alt="Halo-Halo">
+                    <div class="menu-content">
+                        <h3>Halo-Halo</h3>
+                        <p>Traditional Filipino shaved ice dessert</p>
+                        <div class="menu-price-rating">
+                            <span class="menu-price">₱80</span>
+                            <div class="rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                        </div>
+                        <button class="view-details-btn" data-bs-toggle="modal" data-bs-target="#menuModal6">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Snacks -->
+                <div class="menu-card" data-category="snacks">
+                    <img src="assets/images/menu/lumpia.jpg" alt="Lumpia">
+                    <div class="menu-content">
+                        <h3>Lumpia</h3>
+                        <p>Crispy spring rolls with vegetable and meat filling</p>
+                        <div class="menu-price-rating">
+                            <span class="menu-price">₱80</span>
+                            <div class="rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                        </div>
+                        <button class="view-details-btn" data-bs-toggle="modal" data-bs-target="#menuModal7">View Details</button>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="snacks">
+                    <img src="assets/images/menu/turon.jpg" alt="Turon">
+                    <div class="menu-content">
+                        <h3>Turon</h3>
+                        <p>Banana and jackfruit wrapped in spring roll wrapper</p>
+                        <div class="menu-price-rating">
+                            <span class="menu-price">₱40</span>
+                            <div class="rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <button class="view-details-btn" data-bs-toggle="modal" data-bs-target="#menuModal8">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Special Offers -->
+                <div class="menu-card" data-category="specials">
+                    <div class="special-badge">Special Offer</div>
+                    <img src="assets/images/menu/family-set.jpg" alt="Family Set">
+                    <div class="menu-content">
+                        <h3>Family Set Meal</h3>
+                        <p>Perfect for 4-6 persons</p>
+                        <div class="menu-price-rating">
+                            <span class="menu-price">₱500</span>
+                            <div class="rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <button class="view-details-btn" data-bs-toggle="modal" data-bs-target="#menuModal9">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Special Features -->
+    <section class="menu-features bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="bi bi-heart"></i>
+                        <h3>Made with Love</h3>
+                        <p>Every dish is prepared with care using family recipes passed down through generations.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="bi bi-tree"></i>
+                        <h3>Farm Fresh</h3>
+                        <p>We use fresh ingredients sourced directly from our farm and local suppliers.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="bi bi-people"></i>
+                        <h3>Family Friendly</h3>
+                        <p>Our menu includes options for all ages, from kids to seniors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Modals -->
+    <!-- Modal 1 - Pork Adobo -->
+    <div class="modal fade" id="menuModal1" tabindex="-1" aria-labelledby="menuModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menuModal1Label">Pork Adobo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/menu/adobo.png" alt="Pork Adobo" class="img-fluid mb-4">
+                    <h3>₱120</h3>
+                    <p class="lead">Classic Filipino dish of tender pork in soy sauce and vinegar</p>
+                    <div class="ingredients">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>Pork belly</li>
+                            <li>Soy sauce</li>
+                            <li>Vinegar</li>
+                            <li>Garlic</li>
+                            <li>Bay leaves</li>
+                            <li>Black peppercorns</li>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <h4>Description:</h4>
+                        <p>Our signature Pork Adobo is slow-cooked to perfection, resulting in tender meat that falls off the bone. The sauce is rich and flavorful, perfect for pairing with steamed rice.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 - Sinigang -->
+    <div class="modal fade" id="menuModal2" tabindex="-1" aria-labelledby="menuModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menuModal2Label">Sinigang</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/menu/sinigang.jpg" alt="Sinigang" class="img-fluid mb-4">
+                    <h3>₱150</h3>
+                    <p class="lead">Traditional sour soup with pork and fresh vegetables</p>
+                    <div class="ingredients">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>Pork ribs</li>
+                            <li>Tamarind</li>
+                            <li>Tomatoes</li>
+                            <li>Eggplant</li>
+                            <li>String beans</li>
+                            <li>Radish</li>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <h4>Description:</h4>
+                        <p>A comforting Filipino soup known for its sour and savory taste. Our Sinigang features tender pork and fresh farm vegetables in a tamarind-based broth.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 - Brewed Coffee -->
+    <div class="modal fade" id="menuModal3" tabindex="-1" aria-labelledby="menuModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menuModal3Label">Brewed Coffee</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/menu/coffee.jpg" alt="Brewed Coffee" class="img-fluid mb-4">
+                    <h3>₱50</h3>
+                    <p class="lead">Freshly brewed local coffee</p>
+                    <div class="ingredients">
+                        <h4>Coffee Details:</h4>
+                        <ul>
+                            <li>Locally sourced Bukidnon coffee beans</li>
+                            <li>Medium roast</li>
+                            <li>Fresh ground daily</li>
+                            <li>Served hot or iced</li>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <h4>Description:</h4>
+                        <p>Experience the rich flavor of locally grown Bukidnon coffee. Each cup is freshly brewed to perfection, offering a smooth and aromatic experience.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 - Calamansi Juice -->
+    <div class="modal fade" id="menuModal4" tabindex="-1" aria-labelledby="menuModal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menuModal4Label">Calamansi Juice</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/menu/calamansi.jpg" alt="Calamansi Juice" class="img-fluid mb-4">
+                    <h3>₱60</h3>
+                    <p class="lead">Fresh squeezed local calamansi with honey</p>
+                    <div class="ingredients">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>Fresh calamansi</li>
+                            <li>Pure honey</li>
+                            <li>Filtered water</li>
+                            <li>Ice (optional)</li>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <h4>Description:</h4>
+                        <p>A refreshing blend of freshly squeezed calamansi juice sweetened with pure honey. Perfect for hot days or as a healthy refreshment.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 - Leche Flan -->
+    <div class="modal fade" id="menuModal5" tabindex="-1" aria-labelledby="menuModal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menuModal5Label">Leche Flan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/menu/leche-flan.jpg" alt="Leche Flan" class="img-fluid mb-4">
+                    <h3>₱60</h3>
+                    <p class="lead">Creamy caramel custard dessert</p>
+                    <div class="ingredients">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>Fresh egg yolks</li>
+                            <li>Condensed milk</li>
+                            <li>Evaporated milk</li>
+                            <li>Vanilla extract</li>
+                            <li>Caramelized sugar</li>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <h4>Description:</h4>
+                        <p>Our Leche Flan is silky smooth and perfectly caramelized. Made with farm-fresh eggs and quality ingredients for that perfect melt-in-your-mouth experience.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 - Halo-Halo -->
+    <div class="modal fade" id="menuModal6" tabindex="-1" aria-labelledby="menuModal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menuModal6Label">Halo-Halo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/menu/halo-halo.jpg" alt="Halo-Halo" class="img-fluid mb-4">
+                    <h3>₱80</h3>
+                    <p class="lead">Traditional Filipino shaved ice dessert</p>
+                    <div class="ingredients">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>Shaved ice</li>
+                            <li>Ube ice cream</li>
+                            <li>Sweetened beans</li>
+                            <li>Nata de coco</li>
+                            <li>Kaong</li>
+                            <li>Leche flan</li>
+                            <li>Evaporated milk</li>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <h4>Description:</h4>
+                        <p>Our special Halo-Halo is loaded with traditional Filipino ingredients, topped with purple yam ice cream and leche flan. A perfect dessert for hot days!</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 7 - Lumpia -->
+    <div class="modal fade" id="menuModal7" tabindex="-1" aria-labelledby="menuModal7Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menuModal7Label">Lumpia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/menu/lumpia.jpg" alt="Lumpia" class="img-fluid mb-4">
+                    <h3>₱80</h3>
+                    <p class="lead">Crispy spring rolls with vegetable and meat filling</p>
+                    <div class="ingredients">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>Ground pork</li>
+                            <li>Carrots</li>
+                            <li>Cabbage</li>
+                            <li>Onions</li>
+                            <li>Garlic</li>
+                            <li>Spring roll wrapper</li>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <h4>Description:</h4>
+                        <p>Our Lumpia is freshly made and fried to golden perfection. Served with sweet chili sauce, it's a perfect snack or appetizer.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 8 - Turon -->
+    <div class="modal fade" id="menuModal8" tabindex="-1" aria-labelledby="menuModal8Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menuModal8Label">Turon</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/menu/turon.jpg" alt="Turon" class="img-fluid mb-4">
+                    <h3>₱40</h3>
+                    <p class="lead">Banana and jackfruit wrapped in spring roll wrapper</p>
+                    <div class="ingredients">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>Saba banana</li>
+                            <li>Ripe jackfruit</li>
+                            <li>Brown sugar</li>
+                            <li>Spring roll wrapper</li>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <h4>Description:</h4>
+                        <p>Sweet and crispy dessert made with ripe bananas and jackfruit, rolled in spring roll wrapper and coated with caramelized sugar. A perfect afternoon snack!</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 9 - Family Set -->
+    <div class="modal fade" id="menuModal9" tabindex="-1" aria-labelledby="menuModal9Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menuModal9Label">Family Set Meal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/menu/family-set.jpg" alt="Family Set" class="img-fluid mb-4">
+                    <h3>₱500</h3>
+                    <p class="lead">Perfect for 4-6 persons</p>
+                    <div class="set-includes">
+                        <h4>Set Includes:</h4>
+                        <ul>
+                            <li>Pork Adobo (Family Size)</li>
+                            <li>Sinigang na Baboy</li>
+                            <li>Rice (6 cups)</li>
+                            <li>Lumpia (8 pieces)</li>
+                            <li>Leche Flan (Family Size)</li>
+                            <li>Choice of drinks (6 glasses)</li>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <h4>Description:</h4>
+                        <p>Our Family Set Meal is perfect for gatherings and family celebrations. Enjoy a variety of our best dishes at a special price. All dishes are served fresh and hot!</p>
+                        <div class="special-note mt-3">
+                            <h4>Special Note:</h4>
+                            <p>Please inform us in advance for any dietary restrictions or preferences. Substitutions are available upon request.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>About Us</h4>
+                    <p>Harah Rubina Del Dios Farm, owned by Luisita Oponda, is a premier destination in Santo Niño Purok II, Manolo Fortich, Bukidnon, offering diverse recreational activities and authentic farm experiences.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="menu.html">Food Menu</a></li>
+                        <li><a href="gallery.html">Photo Gallery</a></li>
+                        <li><a href="blog.html">Latest Updates</a></li>
+                        <li><a href="contact.html">Visit Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Visit Us</h4>
+                    <ul class="contact-info">
+                        <li><i class="bi bi-geo-alt"></i> Santo Niño Purok II, Manolo Fortich, Bukidnon, Philippines</li>
+                        <li><i class="bi bi-telephone"></i> Contact us on Facebook</li>
+                        <li><i class="bi bi-clock"></i> Open Daily</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61555217610211" target="_blank" class="facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Harah Rubina Del Dios Farm. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed-buttons">
+        <!-- Back to Top Button -->
+        <button id="backToTop" class="back-to-top">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+
+        <!-- Chatbot -->
+        <div class="chatbot">
+            <button class="chatbot-toggler">
+                <i class="bi bi-chat-dots-fill"></i>
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <div class="chatbot-box">
+                <header>
+                    <h2>Harah Farm Assistant</h2>
+                    <p>Hi! How can I help you today?</p>
+                </header>
+                <div class="chatbot-messages">
+                    <div class="default-message">
+                        <p>Welcome to Harah Rubina Del Dios Farm! Feel free to ask me about:</p>
+                        <ul>
+                            <li>Our services and facilities</li>
+                            <li>Location and directions</li>
+                            <li>Opening hours</li>
+                            <li>Menu and food services</li>
+                            <li>Farm tours and activities</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <textarea placeholder="Enter your message..." required></textarea>
+                    <button class="send-btn">
+                        <i class="bi bi-send-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle">
+            <i class="bi bi-moon-fill"></i>
+        </button>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <!-- Chatbot JS -->
+    <script src="assets/js/chatbot.js"></script>
+</body>
+</html>
