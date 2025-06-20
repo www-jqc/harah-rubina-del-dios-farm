@@ -129,6 +129,55 @@ $(document).ready(function() {
             });
         });
     }
+
+    // Background Music
+    const backgroundMusic = document.getElementById('background-music');
+
+    if (backgroundMusic) {
+        backgroundMusic.volume = 0.2; // Set a pleasant, non-intrusive volume
+
+        const playMusic = () => {
+            const playPromise = backgroundMusic.play();
+            if (playPromise !== undefined) {
+                playPromise.catch(error => {
+                    console.log("Autoplay was prevented by the browser.");
+                    // As a fallback, we can try to play it again after a user interaction.
+                    document.body.addEventListener('click', playMusic, { once: true });
+                });
+            }
+        };
+
+        // Attempt to play music automatically
+        playMusic();
+    }
+
+    // Navbar shadow on scroll
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    }
+
+    // Back to Top Button
+    const backToTopButton = document.getElementById('backToTop');
+    if (backToTopButton) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
 });
 
 // Theme Toggle Functionality
