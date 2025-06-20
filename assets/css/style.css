@@ -232,6 +232,16 @@ section {
     margin-bottom: 10px;
 }
 
+.blog-card .btn-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.blog-card .btn-link:hover {
+    text-decoration: underline;
+}
+
 /* Footer */
 .footer {
     background-color: var(--footer-bg);
@@ -1227,4 +1237,100 @@ section {
 /* Dark mode adjustments for typing indicator */
 [data-theme="dark"] .typing-indicator .dot {
     background: var(--primary-color);
+}
+
+/* --- Gallery Page --- */
+.gallery-filter {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.filter-buttons {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    background-color: var(--light-gray);
+    padding: 0.5rem;
+    border-radius: 50px;
+}
+
+.filter-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: var(--primary-color-light);
+    color: var(--white-color);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-grid {
+    padding-bottom: 4rem;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay i {
+    color: var(--white-color);
+    font-size: 2.5rem;
+}
+
+.gallery-item.hide {
+    display: none;
+}
+/* --- About Page --- */
+.page-header {
+    padding: 10rem 0 5rem;
 }

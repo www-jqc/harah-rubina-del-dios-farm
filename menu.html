@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the delicious menu at Harah Rubina Del Dios Farm. We offer a wide range of authentic Filipino dishes, drinks, desserts, and snacks, all made with fresh, local ingredients.">
     <title>Menu - Harah Rubina Del Dios Farm</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -118,7 +119,7 @@
         <div class="container">
             <div class="menu-grid">
                 <!-- Main Dishes -->
-                <div class="menu-card" data-category="main">
+                <div class="menu-card" data-category="main" data-aos="fade-up">
                     <img src="assets/images/menu/adobo.png" alt="Pork Adobo">
                     <div class="menu-content">
                         <h3>Pork Adobo</h3>
@@ -137,8 +138,8 @@
                     </div>
                 </div>
 
-                <div class="menu-card" data-category="main">
-                    <img src="assets/images/menu/sinigang.jpg" alt="Sinigang">
+                <div class="menu-card" data-category="main" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/images/image-gallery/4.png" alt="Sinigang">
                     <div class="menu-content">
                         <h3>Sinigang</h3>
                         <p>Traditional sour soup with pork and fresh vegetables</p>
@@ -157,8 +158,8 @@
                 </div>
 
                 <!-- Drinks -->
-                <div class="menu-card" data-category="drinks">
-                    <img src="assets/images/menu/coffee.jpg" alt="Brewed Coffee">
+                <div class="menu-card" data-category="drinks" data-aos="fade-up">
+                    <img src="assets/images/caffe.jpg" alt="Brewed Coffee">
                     <div class="menu-content">
                         <h3>Brewed Coffee</h3>
                         <p>Freshly brewed local coffee</p>
@@ -176,8 +177,8 @@
                     </div>
                 </div>
 
-                <div class="menu-card" data-category="drinks">
-                    <img src="assets/images/menu/calamansi.jpg" alt="Calamansi Juice">
+                <div class="menu-card" data-category="drinks" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/images/image-gallery/12.jpg" alt="Calamansi Juice">
                     <div class="menu-content">
                         <h3>Calamansi Juice</h3>
                         <p>Fresh squeezed local calamansi with honey</p>
@@ -196,8 +197,8 @@
                 </div>
 
                 <!-- Desserts -->
-                <div class="menu-card" data-category="desserts">
-                    <img src="assets/images/menu/leche-flan.jpg" alt="Leche Flan">
+                <div class="menu-card" data-category="desserts" data-aos="fade-up">
+                    <img src="assets/images/image-gallery/5.png" alt="Leche Flan">
                     <div class="menu-content">
                         <h3>Leche Flan</h3>
                         <p>Creamy caramel custard dessert</p>
@@ -215,8 +216,8 @@
                     </div>
                 </div>
 
-                <div class="menu-card" data-category="desserts">
-                    <img src="assets/images/menu/halo-halo.jpg" alt="Halo-Halo">
+                <div class="menu-card" data-category="desserts" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/images/image-gallery/1.png" alt="Halo-Halo">
                     <div class="menu-content">
                         <h3>Halo-Halo</h3>
                         <p>Traditional Filipino shaved ice dessert</p>
@@ -235,8 +236,8 @@
                 </div>
 
                 <!-- Snacks -->
-                <div class="menu-card" data-category="snacks">
-                    <img src="assets/images/menu/lumpia.jpg" alt="Lumpia">
+                <div class="menu-card" data-category="snacks" data-aos="fade-up">
+                    <img src="assets/images/image-gallery/4.png" alt="Lumpia">
                     <div class="menu-content">
                         <h3>Lumpia</h3>
                         <p>Crispy spring rolls with vegetable and meat filling</p>
@@ -254,8 +255,8 @@
                     </div>
                 </div>
 
-                <div class="menu-card" data-category="snacks">
-                    <img src="assets/images/menu/turon.jpg" alt="Turon">
+                <div class="menu-card" data-category="snacks" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/images/image-gallery/5.png" alt="Turon">
                     <div class="menu-content">
                         <h3>Turon</h3>
                         <p>Banana and jackfruit wrapped in spring roll wrapper</p>
@@ -274,9 +275,9 @@
                 </div>
 
                 <!-- Special Offers -->
-                <div class="menu-card" data-category="specials">
+                <div class="menu-card" data-category="specials" data-aos="fade-up">
                     <div class="special-badge">Special Offer</div>
-                    <img src="assets/images/menu/family-set.jpg" alt="Family Set">
+                    <img src="assets/images/image-gallery/2.png" alt="Family Set">
                     <div class="menu-content">
                         <h3>Family Set Meal</h3>
                         <p>Perfect for 4-6 persons</p>
@@ -731,6 +732,12 @@
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/menu.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
     <!-- Chatbot JS -->
     <script src="assets/js/chatbot.js"></script>
 </body>
