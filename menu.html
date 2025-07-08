@@ -674,48 +674,39 @@
         </div>
     </footer>
 
-    <div class="fixed-buttons">
-        <!-- Back to Top Button -->
-        <button id="backToTop" class="back-to-top">
-            <i class="bi bi-arrow-up"></i>
-        </button>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
 
-        <!-- Chatbot -->
-        <div class="chatbot">
-            <button class="chatbot-toggler">
-                <i class="bi bi-chat-dots-fill"></i>
-                <i class="bi bi-x-lg"></i>
-            </button>
-            <div class="chatbot-box">
-                <header>
-                    <h2>Harah Farm Assistant</h2>
-                    <p>Hi! How can I help you today?</p>
-                </header>
-                <div class="chatbot-messages">
-                    <div class="default-message">
-                        <p>Welcome to Harah Rubina Del Dios Farm! Feel free to ask me about:</p>
-                        <ul>
-                            <li>Our services and facilities</li>
-                            <li>Location and directions</li>
-                            <li>Opening hours</li>
-                            <li>Menu and food services</li>
-                            <li>Farm tours and activities</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="chat-input">
-                    <textarea placeholder="Enter your message..." required></textarea>
-                    <button class="send-btn">
-                        <i class="bi bi-send-fill"></i>
-                    </button>
+    <!-- Floating Chatbot -->
+    <div class="chatbot">
+        <button class="chatbot-toggler">
+            <i class="bi bi-chat-dots-fill"></i>
+            <i class="bi bi-x-lg"></i>
+        </button>
+        <div class="chatbot-box">
+            <header>
+                <h2>Harah Farm Assistant</h2>
+                <p>Hi! How can I help you today?</p>
+            </header>
+            <div class="chatbot-messages">
+                <div class="default-message">
+                    <p>Welcome to Harah Rubina Del Dios Farm! Feel free to ask me about:</p>
+                    <ul>
+                        <li>Our services and facilities</li>
+                        <li>Location and directions</li>
+                        <li>Opening hours</li>
+                        <li>Menu and food services</li>
+                        <li>Farm tours and activities</li>
+                    </ul>
                 </div>
             </div>
+            <div class="chat-input">
+                <textarea placeholder="Enter your message..." required></textarea>
+                <button class="send-btn">
+                    <i class="bi bi-send-fill"></i>
+                </button>
+            </div>
         </div>
-
-        <!-- Theme Toggle Button -->
-        <button class="theme-toggle">
-            <i class="bi bi-moon-fill"></i>
-        </button>
     </div>
 
     <audio id="background-music" src="hrddfarm.mp3" loop="" autoplay=""></audio>
