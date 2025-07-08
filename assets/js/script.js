@@ -82,24 +82,13 @@ $(document).ready(function() {
         $('body').addClass('loaded');
     });
 
-    // Update theme toggle icon based on current theme
-    function updateThemeIcon() {
-        const themeIcon = $('.theme-toggle i');
-        if (localStorage.getItem('theme') === 'dark') {
-            themeIcon.removeClass('bi-moon-fill').addClass('bi-sun-fill');
-  } else {
-            themeIcon.removeClass('bi-sun-fill').addClass('bi-moon-fill');
-        }
+    // Theme toggle click handler (jQuery version)
+    if (typeof $ !== 'undefined') {
+        $('.theme-toggle').click(function() {
+            toggleTheme();
+            updateThemeIcon();
+        });
     }
-
-    // Initial icon update
-    updateThemeIcon();
-
-    // Theme toggle click handler
-    $('.theme-toggle').click(function() {
-        toggleTheme();
-        updateThemeIcon();
-    });
 
     // Gallery Filter
     const filterButtons = document.querySelectorAll('.filter-btn');
@@ -194,9 +183,66 @@ function toggleTheme() {
     }
 }
 
-// Initialize theme
-if (localStorage.getItem('theme') === 'dark') {
-    setTheme('dark');
-  } else {
-    setTheme('light');
-  }
+// Update theme toggle icon based on current theme
+function updateThemeIcon() {
+    const themeButtons = document.querySelectorAll('.theme-toggle');
+    
+    themeButtons.forEach(button => {
+        const themeIcon = button.querySelector('i');
+        
+        if (localStorage.getItem('theme') === 'dark') {
+            // If using Bootstrap icons
+            if (themeIcon) {
+                themeIcon.classList.remove('bi-moon-fill');
+                themeIcon.classList.add('bi-sun-fill');
+            } else {
+                // If using emoji
+                button.textContent = '☀️';
+            }
+        } else {
+            // If using Bootstrap icons
+            if (themeIcon) {
+                themeIcon.classList.remove('bi-sun-fill');
+                themeIcon.classList.add('bi-moon-fill');
+            } else {
+                // If using emoji
+                button.textContent = '🌙';
+            }
+        }
+    });
+}
+
+// Initialize theme on page load
+function initializeTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        setTheme(savedTheme);
+    } else {
+        setTheme('light'); // Default to light theme
+    }
+    updateThemeIcon();
+}
+
+// Initialize theme immediately
+initializeTheme();
+
+// Also initialize when DOM is ready (works for both jQuery and vanilla JS)
+document.addEventListener('DOMContentLoaded', function() {
+    initializeTheme();
+    
+    // Add click handlers to theme toggle buttons
+    const themeButtons = document.querySelectorAll('.theme-toggle');
+    themeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            toggleTheme();
+            updateThemeIcon();
+        });
+    });
+});
+
+// For pages with jQuery, also run on jQuery ready
+if (typeof $ !== 'undefined') {
+    $(document).ready(function() {
+        initializeTheme();
+    });
+}
