@@ -801,7 +801,11 @@ section {
 
     .service-card img,
     .blog-card img {
-        height: 180px;
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important;
+        object-fit: cover;
     }
 }
 
