@@ -492,5 +492,31 @@
             });
         });
     </script>
+
+    <!-- Hidden Background Music Player -->
+    <audio id="bg-music" src="hrddfarm.mp3" autoplay loop></audio>
+    <script>
+    // Seamless background music across pages
+    const audio = document.getElementById('bg-music');
+    audio.style.display = 'none';
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedTime = localStorage.getItem('bg-music-time');
+      const wasPlaying = localStorage.getItem('bg-music-playing');
+      if (savedTime) audio.currentTime = parseFloat(savedTime);
+      if (wasPlaying === 'true') {
+        audio.play().catch(()=>{});
+      }
+    });
+    audio.addEventListener('timeupdate', () => {
+      localStorage.setItem('bg-music-time', audio.currentTime);
+    });
+    audio.addEventListener('play', () => {
+      localStorage.setItem('bg-music-playing', 'true');
+    });
+    audio.addEventListener('pause', () => {
+      localStorage.setItem('bg-music-playing', 'false');
+    });
+    </script>
+    <!-- End Hidden Background Music Player -->
 </body>
 </html>
